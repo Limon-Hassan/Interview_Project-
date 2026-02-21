@@ -1,5 +1,5 @@
 import React from 'react';
-import ClientProvider from './clientProvider';
+import ClientProvider from './ClientProvider';
 
 const page = () => {
   return <ClientProvider />;

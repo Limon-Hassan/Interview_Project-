@@ -44,6 +44,10 @@ app.get('/test-api', async (req, res) => {
   }
 });
 
+app.get('/', (req, res) => {
+  res.send('Welcome to the News API');
+});
+
 app.listen(process.env.SERVER_PORT || 4545, () => {
   console.log('Server is running on port ' + process.env.SERVER_PORT);
 });

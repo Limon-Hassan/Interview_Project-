@@ -15,7 +15,10 @@ DBConfig();
 app.use(cors());
 app.use(
   cors({
-    origin: 'http://localhost:3000',
+    origin: [
+      'http://localhost:3000',
+      'https://interview-project-08sw.onrender.com',
+    ],
   }),
 );
 app.use(bodyParser.json());

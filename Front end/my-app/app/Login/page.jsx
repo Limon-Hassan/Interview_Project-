@@ -12,7 +12,7 @@ const LoginPage = () => {
   const handleLogin = async e => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:4545/user/login', {
+      const res = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/user/login`, {
         email,
         password,
       });
